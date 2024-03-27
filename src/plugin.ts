@@ -28,7 +28,7 @@ export interface WebviewOverlayOpenOptions {
     userAgent?: string;
 }
 
-class WebviewOverlayClass {
+export class WebviewOverlayClass {
 
     element: HTMLElement;
     updateSnapshotEvent: PluginListenerHandle;
