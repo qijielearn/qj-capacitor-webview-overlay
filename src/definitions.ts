@@ -38,7 +38,7 @@ export interface IWebviewOverlayPlugin {
     addListener(eventName: 'pageLoaded' | 'updateSnapshot' | 'progress' | 'navigationHandler', listenerFunc: (...args: any[]) => void): PluginListenerHandle;
 }
 
-interface OpenOptions extends Dimensions {
+export interface OpenOptions extends Dimensions {
     /**
      * The URL to open the webview to
      */
@@ -49,7 +49,7 @@ interface OpenOptions extends Dimensions {
     userAgent?: string;
 }
 
-interface Dimensions {
+export interface Dimensions {
     width: number;
     height: number;
     x: number;
